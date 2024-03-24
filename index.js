@@ -9,16 +9,16 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 
 // Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Route for serving the main HTML page
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Route for serving the second HTML page (to be triggered on button click)
 app.get('/index2', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'public', 'index2.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index2.html'));
 });
 
 // Mock video data

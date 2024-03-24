@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editing Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/456ad94be1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="main-container">
+		<section class="sidebar-section">
+			<div class="sidebar-container">
+				<h1 id="animatedLogo" class="logo">V-EDIT.IO</h1>
+				<div class="sidebar-menu">
+					<div class="menu-items active"><a href="index2.html">New Video</a>
+						<i class="fa-solid fa-plus"></i></div>
+					<div class="menu-items"><a href="#">Home</a></div>
+					<div class="menu-items"><a href="#">Template</a></div>
+					<div class="menu-items"><a href="#">All Video</a></div>
+					<div class="menu-items"><a href="#">Settings</a></div>
+				</div>
+			</div>
+		</section>
+		<section class="content-section">
+			<div class="header">
+				<div class="search-bar">
+					<div class="search-input">
+						<div><input type="text"  placeholder="Search..."></div>
+						<div><a href="../../examples/"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+					</div>
+				</div>
+				<div class="profile">
+					<div class="profile-img"><i class="fa-solid fa-user"></i></div>
+				</div>
+			</div>
+			<div class="create-video">
+				<div><span>Lets create some <b style="color:rgb(23, 141, 209)">Videos!!</b></span></div>
+				<div class="create-menu">
+					<div class="list-menu"><a href="index2.html">Create Project</a><i class="fa-solid fa-plus" style="color: rgb(23, 141, 209);"></i></div>
+					<div class="list-menu"><a href="#">Record Video</a><i class="fa-solid fa-record-vinyl" style="color: rgb(23, 141, 209);"></i></div>
+					<div class="list-menu"><a href="#">Go Live</a><i class="fa-brands fa-creative-commons-by" style="color: rgb(23, 141, 209);"></i></div>
+				</div>
+			</div>
+			<div class="videos-section">
+				<div class="video-header">
+					<div><span>My Recent Videos</span></div>
+					<div><span><a href="#">All Videos ></a></span></div>
+				</div>
+				<div class="videos">
+					<div class="video-card">
+						<!-- Video are getting added dynamically -->
+					</div>
+				</div>
+			</div>
+			
+		</section>
+	</div>
+    
+    
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
