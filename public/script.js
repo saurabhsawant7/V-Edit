@@ -1,6 +1,6 @@
 //Videos
 document.addEventListener('DOMContentLoaded', () => {
-	fetch('http://localhost:3000/videos')
+	fetch('/videos')
 	  .then(response => response.json())
 	  .then(videos => {
 		const videosContainer = document.querySelector('.video-card');
