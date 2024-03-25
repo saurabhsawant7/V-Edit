@@ -8,9 +8,19 @@
 	],
 	"routes": [
 		{
+			"src": "/",
+			"dest": "/public/index.html"
+		},
+		{
+			"src": "/index2",
+			"dest": "/public/index2.html"
+		},
+		{
 			"src": "/(.*)",
-			"dest": "/"
+			"status": 404,
+			"dest": "/public/404.html"
 		}
+	
 		
 	]
 }
